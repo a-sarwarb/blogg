@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}ГЛАВНАЯ{% endblock title %}
+{% block content %}
+
+
+
+
+{% if user.is_authenticated %}
+<!--    Добро пожаловать {{ user.username }}-->
+<!--    <p><a href="{% url 'logout' %}">ВЫЙТИ</a></p>-->
+<div class="card text-center">
+  <div class="card-header">
+    {{ user.username }}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Добро пожаловать</h5>
+    <p class="card-text">Желаем вам хорошо провести время</p>
+    <a href="{% url 'logout' %}" class="btn btn-primary">ВЫЙТИ</a>
+  </div>
+  <div class="card-footer text-muted">
+    Развлекайтесь
+  </div>
+</div>
+
+{% else %}
+<!--    <p>Вы не авторизованы</p>-->
+<!--    <a href="{% url 'login' %}">ВОЙТИ</a> | <a href="{% url 'signup' %}">РЕГИСТРАЦИЯ</a>-->
+
+<div class="card">
+  <div class="card-header">
+    ОШИБКА
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">ПРОСТИТЕ</h5>
+    <p class="card-text">Вы не вошли либо не зарегистрированы!</p>
+    <a href="{% url 'login' %}" class="btn btn-primary">ВОЙТИ</a>
+    <a href="{% url 'signup' %}" class="btn btn-primary">РЕГИСТРАЦИЯ</a>
+  </div>
+</div>
+{% endif %}
+
+
+
+
+
+
+
+{% endblock content %}

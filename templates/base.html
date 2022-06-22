@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Blog02{% endblock title %}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+<!--<header>-->
+<!--    <a href="{% url 'article_new' %}">Добавить пост</a>-->
+<!--    <a href="{% url 'home' %}">Главная</a>-->
+<!--</header>-->
+<div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="{% url 'home' %}" class="nav-item nav-link active">ГЛАВНАЯ</a>
+                    <a href="{% url 'article_list' %}" class="nav-item nav-link">ПОСТЫ</a>
+                    <a href="{% url 'article_new' %}" class="nav-item nav-link">ОТПРАВИТЬ ПОСТ</a>
+
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                    <input type="text" class="form-control" placeholder="Keyword">
+                    <div class="input-group-append">
+                        <button class="input-group-text text-secondary"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+<!-- As a heading -->
+<!--<nav class="navbar bg-light">-->
+<!--  <div class="container-fluid">-->
+<!--    <span class="navbar-brand mb-0 h1">Blogg02</span>-->
+<!--  </div>-->
+<!--</nav>-->
+<!--{% if user.is_authenticated %}-->
+<!--    Добро пожаловать {{ user.username }}-->
+<!--    <p><a href="{% url 'logout' %}">ВЫЙТИ</a></p>-->
+
+
+<!--{% else %}-->
+<!--    <p>Вы не авторизованы</p>-->
+<!--    <a href="{% url 'login' %}">ВОЙТИ</a> | <a href="{% url 'signup' %}">РЕГИСТРАЦИЯ</a>-->
+
+<!--{% endif %}-->
+<!-- Top News Slider Start -->
+
+    <!-- Top News Slider End -->
+
+
+    <!-- Main News Slider Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="owl-carousel owl-carousel-2 carousel-item-1 position-relative mb-3 mb-lg-0">
+                        <div class="position-relative overflow-hidden" style="height: 435px;">
+                            <img class="img-fluid h-100" src="https://thumbs.dreamstime.com/b/world-globe-book-education-school-concept-123319419.jpg" style="object-fit: cover;">
+                            <div class="overlay">
+                                <div class="mb-1">
+                                    <p><a class="text-black" href="http://127.0.0.1:8000/articles/3/">Technology</a></p>
+                                    <span class="px-2 text-black">/</span>
+                                    <a class="text-black" href="">January 01, 2045</a>
+                                </div>
+                                <a class="h2 m-0 text-black font-weight-bold" href="">Sanctus amet sed amet ipsum lorem. Dolores et erat et elitr sea sed</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="position-relative overflow-hidden">
+
+                            <div class="overlay">
+                                <div class="mb-1">
+
+
+
+                                </div>
+                                <h3>WELCOME</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                        <h3 class="m-0">Categories</h3>
+                        <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                    </div>
+                    <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
+                        <img class="img-fluid w-100 h-100" src="https://rubic.us/wp-content/uploads/2017/12/global-business.jpg" style="object-fit: cover;">
+                        <a href="" class="overlay align-items-center justify-content-center h4 m-0 text-black text-decoration-none">
+                            Business
+                        </a>
+                    </div>
+                    <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
+                        <img class="img-fluid w-100 h-100" src="https://media.istockphoto.com/photos/data-scientists-male-programmer-using-laptop-analyzing-and-developing-picture-id1295900106?k=20&m=1295900106&s=612x612&w=0&h=hDkQP1a9dUo4Esv8iMyVlEnP4nfN2mwM5LdtPW9M8zo=" style="object-fit: cover;">
+                        <a href="" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                            Technology
+                        </a>
+                    </div>
+                    <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
+                        <img class="img-fluid w-100 h-100" src="http://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/Desk%20of%20Business%20Woman.png&w=1200&h=630" style="object-fit: cover;">
+                        <a href="" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                            Entertainment
+                        </a>
+                    </div>
+                    <div class="position-relative overflow-hidden" style="height: 80px;">
+                        <img class="img-fluid w-100 h-100" src="https://www.beachvillas.com/travel/wp-content/uploads/2020/11/Return_of_Sports.jpg" style="object-fit: cover;">
+                        <a href="" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                            Sports
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+
+
+      </div>
+
+    </section>
+
+  </div>
+</body>
+</html>
